@@ -1,7 +1,23 @@
 body {
   background-color: #a2bbdb;
-  font-size: 16px;
+  font-size: 20px;
   display: flex;
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: "Times New Roman", Times, serif;
 }
 
+ul{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover{
+  background-color: #00ced1;
+}
+
+li{
+  padding: 15px;
+}
