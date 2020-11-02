@@ -15,9 +15,14 @@ a {
 }
 
 a:hover{
-  background-color: #00ced1;
+  background: #00ced1;;
+  border-radius: 20%;
 }
 
 li{
   padding: 15px;
+}
+
+.class{
+  text-align: center;
 }
