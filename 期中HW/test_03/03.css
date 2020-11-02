@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family:'Playfair Display', serif;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding:0 40px;
+}
+
+/* Navbar */
+
+.navbar{
+    position: fixed;
+    background-color:red;
+    width: 100%;
+    padding: 20px 0 ;
+}
+
+.logo-nav{
+    width: 40px;
+    height: 38px;
+    background-size: contain;
+    background-image: url(../test_01/img/hobe\ logo1.png);
+}
+
+.nav-items a{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* Home */
+
+#home{
+    height: 100vh;
+    min-height: 500px;
+    background: url(../test_01/img/62785C31-2F8E-46A6-AD26-B66BE4F32B97.jpeg) no-repeat center; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#home .sm{
+    color: white;
+}

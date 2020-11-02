@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbar{
+    position: fixed;
+    background-color: red;
+    width: 100%;
+    padding: 30px 0; 
+    top: 0;
+    z-index: 999;
+    transition: .3s linear;
+}
+
+.navbar .navbar-collapse{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.a {
+    padding: 0px;
+}
+
+/* Home */
+
