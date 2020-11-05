@@ -1,0 +1,29 @@
+*{
+    font-family:'Long Cang', cursive;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.a a,h1{
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.a{
+    height: 100vh;
+    min-height: 500px;
+    background: url(./IMG_7758.jpg) no-repeat center; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    padding: 50px 0;
+}
+
+img{
+    padding-bottom: 50px;
+}
