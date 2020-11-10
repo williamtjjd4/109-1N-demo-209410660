@@ -16,7 +16,6 @@ ul {
     list-style: none;
 }
 
-
 /* Navbar */
 
 .navbar{
@@ -108,11 +107,12 @@ section{
     padding: 100px 0;
     background-color: RGB(223, 207, 190);
 }
+
 .section-title{
     text-align: center;
     margin-bottom: 80px;
     position: relative;
-    font-size: 35px;
+    font-size: 40px;
     padding-bottom: 20px;
     color: #ffffff;
 }
@@ -120,7 +120,7 @@ section{
 .section-title::before{
     content: " ";
     position: absolute ;
-    width: 240px;
+    width: 280px;
     height: 3px;
     background-color: #ffffff;
     bottom: 0;
@@ -140,45 +140,67 @@ section{
     bottom: -7px;
 }
 
-section.dark{
-    background-color: RGB(223, 207, 190);
-}
-
-section.dark .section-title{
-    color: #ffff;
-}
-
-section.dark .section-title::before{
-    background-color: #ffff;
-}
-
-section.dark .section-title::after{
-    border: 4px solid RGB(223, 207, 190);
-}
-
-.day{
+.weekday{
+    color: RGB(223, 207, 190);
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    /* grid-template-rows: repeat(6,1fr); */
-    color: #ffffff;
-    font-size: 18px;
+    grid-template-columns: repeat(4,1fr);
     text-align: center;
 }
 
-.monday,.tuesday,.wednesday,.thursday,.friday,.sunday{
-    border: 2px solid #ffffff;
-    padding: 15px 15px ;
-    margin-right:5px;
-    margin-left: 5px;
-    border-radius: 15px;
+.weekday h3{
+    padding-top: 1rem;
+}
+
+.weekday .time{
+    padding-bottom: 1rem;
 }
 
 .time{
     display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(12,0.5fr);
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 2.5rem;
+}
+
+.mon,.tue,.wed,.thu{
+    background-color: #ffffff;
+    height: 13rem;
+    border:3px solid RGB(223, 207, 190);
+    border-radius: 20px;
+}
+
+.mon .right{
+    padding-top: 1.3rem;
+}
+
+.tue .right{
+    padding-top: 0.8rem;
+}
+
+.wed .right{
+    padding-top: 0.8rem;
+}
+
+.thu .right{
+    padding-top: 1.3rem;
+}
+
+.iclass{
     color: #ffffff;
-    font-size: 18px;
+    background-color: RGB(223, 207, 190);
+    margin-left: 6.2rem;
+    width: 6rem;
+    border-radius: 20px;
+}
+
+.iclass a{
+    font-size: 1.2rem;
+    padding-right: 0.5rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.iclass:hover{
+    background-color: #bdcfe0;
 }
 
 @media screen and (max-width :650px){
@@ -226,5 +248,27 @@ section.dark .section-title::after{
     
     .nav-items .active{
         right: 0;
+    }
+}
+
+@media (max-width:700px){
+    
+    .weekday{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .iclass{
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width:500px){
+    
+    .weekday{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .iclass{
+        margin-left: 9.5rem;
     }
 }
