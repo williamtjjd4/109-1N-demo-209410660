@@ -102,6 +102,65 @@ ul {
     color: #ffffff;
 }
 
+/* Class Demo */
+
+.none{
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+#class-demo .section-title{
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #bdcfe0;
+}
+
+#class-demo .section-title::before{
+    content: " ";
+    position: absolute ;
+    width: 190px;
+    height: 3px;
+    background-color: #bdcfe0;
+    bottom: 0;
+    /* left: 50%; */
+    left: calc(50%-100px);
+}
+
+#class-demo .section-title::after{
+    content: " ";
+    position: absolute;
+    width: 17px;
+    height: 10px;
+    background-color: #bdcfe0;
+    border: 4px solid #ffffff;
+    left: 48.5%;
+    /* left: 50%; */
+    bottom: -7px;
+}
+
+.demos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.demo{
+    width: calc(33% - 10px);
+    overflow: hidden;
+    border-radius: 6px;
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.demo img{
+    width: 100%;
+    height: 100%;
+}
+
 /* School Timetable */
 
 .color{
@@ -247,14 +306,122 @@ ul {
     border-radius: 20px;
 }
 
-.fri .iclass{
-    margin-left: 16rem;
-    margin-top: 2.8rem;
+.i{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 }
 
-.sun .iclass{
-    margin-left: 16rem;
+.i .iclass{
+    margin-top: 2.8rem;
+    margin-left: 2.8rem;
+}
+
+.c{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.c .iclass{
     margin-top: 1.4rem;
+    margin-left: 1.8rem;
+}
+
+@media (max-width:1193px){
+    .i .iclass{
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width:1106px){
+    .c .iclass{
+        margin-top: 0rem;
+    }
+}
+
+@media (max-width:1000px){
+    
+    .weekend{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .iclass{
+        margin-left: 4rem;
+    }
+    
+    .i .iclass{
+        margin-top: 2.8rem;
+        margin-left: 6.3rem;
+    }
+    
+    .c .iclass{
+        margin-top: 2.8rem;
+        margin-left: 4rem;
+    }
+
+}
+
+@media (max-width:899px){
+    .sun{
+        height: 16.3rem;
+    }
+}
+
+@media (max-width:848px){
+    
+    .weekday{
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .weekend{
+        grid-template-columns: 1fr;
+    }
+    
+    .sun{
+        height: 17rem;
+    }
+    
+    .iclass{
+        margin-left: 8.5rem;
+    }
+    
+    .i .iclass,
+    .c .iclass{
+        margin-top: 2.8rem;
+    }
+    
+    .i .iclass{
+        margin-left: 4.8rem;
+    }
+    
+    .c .iclass{
+        margin-left: 3rem;
+    }
+
+}
+
+@media (max-width:670px){
+    
+    .weekday{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .iclass{
+        margin-left: 15rem;
+    }
+    
+    .i .iclass{
+        margin-top: 2.7rem;
+        margin-left: 3rem;
+    }
+    
+    .c .iclass{
+        margin-top: 4rem;
+        margin-left: 1.3rem;
+    }
+    
+    .sun{
+        height: 17.7rem;
+    }
 }
 
 @media screen and (max-width :650px){
@@ -305,52 +472,8 @@ ul {
     }
 }
 
-@media (max-width:700px){
-    
-    .weekday{
-        grid-template-columns: repeat(2,1fr);
-    }
-    
-    .iclass{
-        margin-left: 5rem;
-    }
-    
-    .weekend{
-        grid-template-columns: 1fr;
-    }
-    
-    .fri .iclass{
-        margin-left: 12rem;
-    }
-    
-    .sun .iclass{
-        margin-left: 12rem;
-    }
-    
-    .sun{
-        height: 16.4rem;
-    }
-}
-
-@media (max-width:500px){
-    
-    .weekday{
-        grid-template-columns: repeat(1,1fr);
-    }
-    
-    .iclass{
-        margin-left: 9.5rem;
-    }
-
-    .fri .iclass{
-        margin-left: 10rem;
-    }
-    
-    .sun .iclass{
-        margin-left: 10rem;
-    }
-    
-    .sun{
-        height: 17.7rem;
+@media (max-width:636px){
+    .i .iclass{
+        margin-top: 1.4rem;
     }
 }
