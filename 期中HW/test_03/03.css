@@ -156,9 +156,49 @@ ul {
     position: relative;
 }
 
+.demo h3{
+    font-size: 20px;
+}
+
 .demo img{
     width: 100%;
     height: 100%;
+    transition: .4s linear;
+}
+
+.demo::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #bdcfe0;
+    transition: .2s linear;
+    transform: scale(0);
+}
+
+.demo .info{
+    position: absolute;
+    z-index: 2;
+    bottom: 6.4rem;
+    left: 8rem;
+    color: #ffffff;
+    transition: .4s linear;
+    opacity: 0;
+}
+
+.demo:hover img{
+    transform: scale(1.6) rotate(25deg);
+}
+
+.demo:hover .info{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.demo:hover::before{
+    opacity: 0.8;
+    transform: scale(1);
 }
 
 /* School Timetable */
@@ -357,7 +397,11 @@ ul {
         margin-top: 2.8rem;
         margin-left: 4rem;
     }
-
+    
+    .demo{
+        width: calc(50% - 10px);
+    }
+    
 }
 
 @media (max-width:899px){
@@ -396,7 +440,16 @@ ul {
     .c .iclass{
         margin-left: 3rem;
     }
-
+    
+    .demo{
+        width: 100%;
+    }
+    
+    .demo .info{
+        bottom: 10rem;
+        left: 12rem;
+    }
+    
 }
 
 @media (max-width:670px){
