@@ -1,0 +1,21 @@
+.container{
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
+
+table{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+td{
+    border: 1px solid #000000;
+    text-align: center;
+    width: 80px;
+    height: 40px;
+}
+
+.number{
+    width: 18px;
+}

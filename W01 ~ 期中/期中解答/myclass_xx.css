@@ -1,0 +1,61 @@
+/* myClass */
+
+#myClass  {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#myClass table {
+  border: 1px solid;
+  padding: 5px;
+  font-size: 14px;
+}
+
+#myClass td {
+  text-align: center;
+  width: 80px;
+  height: 40px;
+  word-break: break-all;
+}
+
+#myClass .name {
+  background-color: darkslateblue;
+  color: white;
+  font-size: 18px;
+}
+
+#myClass .tableName {
+  background-color: darkblue;
+  color: white;
+  font-size: 18px;
+}
+
+#myClass .weekday {
+  background-color: darkturquoise;
+  font-size: 18px;
+}
+
+#myClass .number {
+  width: 18px;
+  background-color: chocolate;
+}
+
+#myClass .time {
+  background-color: bisque;
+  width: 90px;
+}
+
+#myClass .content {
+  background-color: darkseagreen;
+}
+
+#myClass .contact {
+  background-color: blueviolet;
+}
+
+#myClass .contactInfo {
+  background-color: darkgray;
+  text-align: left;
+  padding-left: 5px;
+}
