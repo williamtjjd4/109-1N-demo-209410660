@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color,
+td {
+  font-weight: 550;
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  margin: 30px auto;
+  width: 600px;
+  padding: 2px;
+  border: 2px solid black;
+}
+
+td {
+  border: 1px solid black;
+}
+
+.color {
+  text-justify: auto;
+  text-align: center;
+  width: 20%;
+  background-color: rgb(201, 201, 201);
+}
+
+.mid {
+  width: 60%;
+}
+
+.pic {
+  padding: 30px 10px;
+  width: 20%;
+}
+
+.right {
+  width: 80%;
+}
