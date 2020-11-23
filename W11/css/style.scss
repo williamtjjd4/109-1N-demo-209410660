@@ -56,8 +56,8 @@ a{
         // 絕對定位 －> 跟著上一層走
         .cart-dropdown{
             position: absolute;
-            width: 240px;
-            height: 360px;
+            width: 300px;
+            height: 400px;
             display: none;
             top: 90px;
             right: 40px;
@@ -105,7 +105,7 @@ a{
                 height: 40px;
                 background-color: #000000;
                 color: #ffffff;
-                margin: 20px auto;
+                margin: 60px auto;
                 // &代表前面一個
                 &:hover{
                     background-color: lightgrey;
