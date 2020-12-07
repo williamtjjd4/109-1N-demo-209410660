@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <a href="./index.html" class="logo-container">
+            <img src="./assets/crown.svg" alt="">
+            <!--  svg ->> 向量圖形  -->
+        </a>
+        <div class="options">
+            <a href="./overview.html" class="option">Shop</a>
+            <a href="#" class="option">Contact</a>
+            <a href="#" class="option">Sign In</a>
+            <div class="cart-icon" onclick="cartToggle()">
+                <img src="./assets/shopping-bag.svg" alt="" class="shopping-icon">
+            </div>
+            <div class="cart-dropdown show">
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <img src="https://i.ibb.co/ZYW3VTp/brown-brim.png" alt="">
+                        <div class="item-details">
+                            <span class="name">Brown Brim</span>
+                            <span class="price">4 * 25</span>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="https://i.ibb.co/ypkgK0X/blue-beanie.png" alt="">
+                        <div class="item-details">
+                            <span class="name">Blue Beanie</span>
+                            <span class="price">1 * 25</span>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="https://i.ibb.co/QdJwgmp/brown-cowboy.png" alt="">
+                        <div class="item-details">
+                            <span class="name">Brown Cowboy</span>
+                            <span class="price">3 * 25</span>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="https://i.ibb.co/RjBLWxB/grey-brim.png" alt="">
+                        <div class="item-details">
+                            <span class="name">Grey Brim</span>
+                            <span class="price">2 * 25</span>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <img src="https://i.ibb.co/YTjW3vF/green-beanie.png" alt="">
+                        <div class="item-details">
+                            <span class="name">Green Beanie</span>
+                            <span class="price">1 * 25</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="custom-button">GO TO CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="shop-page">
+        <div class="collection-page">
+            <h1 class="title">SNEAKERS</h1>
+            <div class="items">
+                <div class="collaction-item">
+                    <img src="https://i.ibb.co/0s3pdnc/adidas-nmd.png" alt="">
+                    <div class="collaction-footer">
+                        <span>Adidas NMD</span>
+                        <span>220</span>
+                    </div>
+                    <button class="custom-button">Add to Cart</button>
+                </div>
+                <div class="collaction-item">
+                    <img src="https://i.ibb.co/dJbG1cT/yeezy.png" alt="">
+                    <div class="collaction-footer">
+                        <span>Adidas Yeezy</span>
+                        <span>280</span>
+                    </div>
+                    <button class="custom-button">Add to Cart</button>
+                </div>
+                <div class="collaction-item">
+                    <img src="https://i.ibb.co/bPmVXyP/black-converse.png" alt="">
+                    <div class="collaction-footer">
+                        <span>Black Converse</span>
+                        <span>110</span>
+                    </div>
+                    <button class="custom-button">Add to Cart</button>
+                </div>
+                <div class="collaction-item">
+                    <img src="https://i.ibb.co/1RcFPk0/white-nike-high-tops.png" alt="">
+                    <div class="collaction-footer">
+                        <span>Nike White AirForce</span>
+                        <span>160</span>
+                    </div>
+                    <button class="custom-button">Add to Cart</button>
+                </div>
+                <div class="collaction-item">
+                    <img src="https://i.ibb.co/QcvzydB/nikes-red.png" alt="">
+                    <div class="collaction-footer">
+                        <span>Nike Red High Tops</span>
+                        <span>160</span>
+                    </div>
+                    <button class="custom-button">Add to Cart</button>
+                </div>
+                <div class="collaction-item">
+                    <img src="https://i.ibb.co/fMTV342/nike-brown.png" alt="">
+                    <div class="collaction-footer">
+                        <span>Nike Brown High Tops</span>
+                        <span>160</span>
+                    </div>
+                    <button class="custom-button">Add to Cart</button>
+                </div>
+                <div class="collaction-item">
+                    <img src="https://i.ibb.co/w4k6Ws9/nike-funky.png" alt="">
+                    <div class="collaction-footer">
+                        <span>Air Jordan Limited</span>
+                        <span>190</span>
+                    </div>
+                    <button class="custom-button">Add to Cart</button>
+                </div>
+                <div class="collaction-item">
+                    <img src="https://i.ibb.co/Mhh6wBg/timberlands.png" alt="">
+                    <div class="collaction-footer">
+                        <span>Timberlands</span>
+                        <span>200</span>
+                    </div>
+                    <button class="custom-button">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function cartToggle(){
+            p = document.querySelector('.cart-dropdown');
+            console.log('cart-dropdown', p.classList);
+            p.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
