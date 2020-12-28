@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto",sans-serif;
+    font-size: 16px;
+}
+
+// nav
+
+.nav-container{
+    background: gray;
+    font-family: "Poppins",sans-serif;
+    
+    nav{
+        width: 80%;
+        height: 72px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .logo{
+            font-size: 3.4rem;//rem依據body的font-size
+            font-weight: 800;
+            
+            a{
+                text-decoration: none;
+                color: #000000;
+            }
+        }
+        
+        .nav-items{
+            ul{
+                display: flex;
+                li{
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin: 0 40px;
+                    
+                    a{
+                        text-decoration: none;
+                        color: #000000;
+
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
