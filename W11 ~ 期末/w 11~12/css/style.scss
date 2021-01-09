@@ -64,6 +64,7 @@ a{
             padding: 20px;
             background-color: #ffffff;
             border: 1px solid #000000;
+            z-index: 100;
             
             &.show{
                 display: block;
